@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{ 
+    margin:0;/*etrafından yerleştirmek */
+    padding:0;/*etrafından yerleştirmek */
+}
+/*ana fotoğraf*/
+.container{
+    background:url(ooo.jpg);
+    height: 100vh;
+    background-size:100% 100%;
+}
+/*üsteki fotoğraf*/
+.container .navbar{
+    width:100%; /*fotoğraf düzeltmek için*/
+    height:80px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    /*fotoğraf*/
+    background-size:1570px 200px;
+}
+.navbar .logo{
+    display:inline-block;
+    margin-left:50px; 
+    margin-top:20px;
+}
+.navbar .logo a{
+    text-decoration: none;
+    font-size:30px;
+    font-family:serif ;
+    color:#f3f3f3;
+}
+.navbar ul{
+    float: right;
+    margin-right:20px; 
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 8px;
+    line-height: 80px;
+
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size:20px;
+    padding:6px 13px ;
+    font-family:Roboto;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:#0077ff60 ;
+    border-radius:8px;
+}
+ .container .center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: sans-serif;
+ }
+ /*birinci yazımda kontorl etmek için*/
+ .center h1{
+    color:red;
+    font-size:70px;
+    font-weight:bold;
+    width:900px;
+    text-align: center;
+ }
+ /* ikinci yazımda kontorl etmek için*/
+ .center h2{
+    color:red;
+    font-size: 50px;
+    font-weight:unset;
+    width:885px;
+    margin-top:-25px;
+    text-align: center;
+ }
+
+ .center .buttons{
+    margin:40px 360px;
+   
+ }
+ .buttons button{
+    height:50px;
+    width:150px;
+    font-size:18px;
+    font-weight: bold;
+    color:black;
+    background: blue;
+    border:solid 1.5px black;
+    cursor:pointer;
+    outline:none;
+    border-radius: 25px;
+    transition: .4s;
+   
+ }
+ .buttons button:hover{
+    background: #f3f3f3;
+    
+ }
